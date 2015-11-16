@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
     <!-- título da página  -->
-    <title> Projeto 2 - Curr&iacute;culo Lattes Simplificado </title>
-    <link href="css/styles.css" rel="stylesheet" >
-  
+    <title> Projeto 2 - Currículo Lattes Simplificado </title>
+    <!-- charset do texto -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- estilo da página --> 
+    <link href="css/styles.css" rel="stylesheet" >  
+    <link href="css/reset.css" rel="stylesheet" >  
+    <script src="js/functions.js" type="text/javascript"> </script>
   </head>
   <body>
-    <div class="container"> 
-      <div class="logos"></div>
-      <div class="text"></div>
+    
+    <!-- cabeçalho com as imagens dos logos --> 
+    <div class="logos">
+      <img src="img/logo_cnpq.png" />
+	    <img src="img/logo_lattes.png" />
+    </div>
+
+    <!-- abas com os tipos de visualização -->
+    <div class="abas">
+      <ul>
+        <li id="b-completo"> Completo </li>
+        <li id="b-publicacoes"> Informações pessoais e publicações </li>
+        <li id="b-orientacoes"> Informações pessoais e orientações </li>
+      </ul>
+    </div>
+
+    <!-- informações do currículo --> 
+    <div class="conteudo">
+      <div class="info-pessoal"> Informações Pessoais</div>
+      <div class="publicacoes"> Informações sobre as publicações </div>
+      <div class="orientacoes"> Informações sobre as orientações </div>
     </div>
   </body>
 </html> 
