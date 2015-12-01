@@ -1,7 +1,7 @@
 
 /******** CONSTANTES **********/
 const XMLNAME = "pssouza.xml";
-const XSLNAME = ["inf_pessoal.xsl","orientacoes.xsl","publicacoes.xsl"];
+const XSLNAME = ["inf_pessoal.xsl","academica.xsl","orientacoes.xsl","publicacoes.xsl"];
 
 /* depois de ler todo o documento */
 $(document).ready(function() {
@@ -10,14 +10,16 @@ $(document).ready(function() {
   $(".conteudo").append(addXML(XMLNAME,XSLNAME[0]));
   $(".conteudo").append(addXML(XMLNAME,XSLNAME[1]));
   $(".conteudo").append(addXML(XMLNAME,XSLNAME[2]));
+  $(".conteudo").append(addXML(XMLNAME,XSLNAME[3]));
   
   $("nav li").click(function(){
   		var tipo = $(this).attr("id");
   		
   		/* definindo documentos */
   		var inf_pessoal = addXML(XMLNAME,XSLNAME[0]);
-  		var orientacoes = addXML(XMLNAME,XSLNAME[1]);
-  		var publicacoes = addXML(XMLNAME,XSLNAME[2]);
+  		var academica 	= addXML(XMLNAME,XSLNAME[1]);
+  		var orientacoes = addXML(XMLNAME,XSLNAME[2]);
+  		var publicacoes = addXML(XMLNAME,XSLNAME[3]);
 
   		/* limpa todos os filhos da div .conteudo */
   		$(".conteudo").empty();
@@ -30,6 +32,7 @@ $(document).ready(function() {
   		$(".conteudo").append(inf_pessoal); // todos possuem
   		switch(tipo){
   			case "b-completo":
+  				$(".conteudo").append(academica);
   				$(".conteudo").append(orientacoes);
   				$(".conteudo").append(publicacoes);
   			break;	

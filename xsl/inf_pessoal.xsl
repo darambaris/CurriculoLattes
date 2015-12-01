@@ -107,81 +107,13 @@
 											<xsl:value-of select="ENDERECO-PESSOAL/TELEFONE/NUMERO" />
 										</td>
 									</tr>	
-								</table>
-								<br /><br />	
+								</table><br /><br />	
 							</xsl:when>
 						</xsl:choose>		
 					</xsl:for-each>
 				</section>	
-				<!-- seção formação acadêmica -->
-				<!-- os campos de doutorado, mestrado, especialização são opcionais -->
-				<section>
-					<h2> Formação Acadêmica </h2>
-					<xsl:for-each select="FORMACAO-ACADEMICA/DOUTORADO">
-					<table>
-						<tr>
-							<td>
-								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
-							</td>
-							<td>
-								<xsl:value-of select="TITULO" /><br/>
-								<xsl:value-of select="INSTITUICAO" /><br/>
-								<b>Título:</b> <xsl:value-of select="TITULO-TESE" /><br/>
-								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
-							</td>
-						</tr>	
-					</table>	
-					</xsl:for-each>
-					<xsl:for-each select="FORMACAO-ACADEMICA/MESTRADO">
-					<table>
-						<tr>
-							<td>
-								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
-							</td>
-							<td>
-								<xsl:value-of select="TITULO" /><br/>
-								<xsl:value-of select="INSTITUICAO" /><br/>
-								<b>Título:</b><xsl:value-of select="TITULO-TESE" /><br/>
-								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
-							</td>
-						</tr>	
-					</table>	
-					</xsl:for-each>
-					<xsl:for-each select="FORMACAO-ACADEMICA/ESPECIALIZACAO">
-					<table>
-						<tr>
-							<td>
-								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
-							</td>
-							<td>
-								<xsl:value-of select="TITULO" /><br/>
-								<xsl:value-of select="INSTITUICAO" /><br/>
-								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
-							</td>
-						</tr>	
-					</table>
-					</xsl:for-each>	
-					<xsl:for-each select="FORMACAO-ACADEMICA/GRADUACAO">
-					<table>
-						<tr>
-							<td>
-								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
-							</td>
-							<td>
-								<xsl:value-of select="TITULO" /><br/>
-								<xsl:value-of select="INSTITUICAO" /><br/>
-								<b>Título:</b> <xsl:value-of select="TITULO-TCC" /><br/>
-								<b>Orientador:</b> <xsl:value-of select="ORIENTADOR" /><br/>
-							</td>
-						</tr>	
-					</table>	
-					</xsl:for-each>
-				
-				</section>	
    			</div>
    		</xsl:for-each>	
-
-
     </body> 
    </html>
 </xsl:template>

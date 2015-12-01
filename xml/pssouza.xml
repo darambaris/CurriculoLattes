@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/inf_pessoal.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./xsl/academica.xsl"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/orientacoes.xsl"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/publicacoes.xsl"?>
 <CURRICULO id="curriculo">	
@@ -44,100 +45,159 @@
 				</TELEFONE>
 			</ENDERECO-PESSOAL>	
 		</ENDERECO>
-		<FORMACAO-ACADEMICA>
-			<GRADUACAO status="concluido">
-				<TITULO>Graduação em Bacharel Em Processamento de Dados. </TITULO>
-				<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
-				<TITULO-TCC> Tecnologia da Informação Aplicada à Medicina. </TITULO-TCC>
-				<ORIENTADOR> Luis Fernando Wambier. </ORIENTADOR>
-				<DURACAO>
-					<INICIO>1988</INICIO>
-					<CONCLUSAO>1990</CONCLUSAO>
-				</DURACAO>	
-			</GRADUACAO>
-			<ESPECIALIZACAO status="concluido">
-				<TITULO> Especialização Em Ciências da Computação. </TITULO>
-				<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
-				<ORIENTADOR> João Umberto Furquim de Souza. </ORIENTADOR>
-				<DURACAO>
-					<INICIO>1991</INICIO>
-					<CONCLUSAO>1992</CONCLUSAO>
-				</DURACAO>	
-			</ESPECIALIZACAO>
-			<MESTRADO status="concluido">
-				<TITULO> Mestrado em Ciências de Computação e Matemática Computacional.  </TITULO>
-				<INSTITUICAO codigo="006742000000"> Instituto de Ciências Matemáticas e de Computação Usp São Carlos </INSTITUICAO>
-				<TITULO-TESE> Máquina Paralela Virtual em Ambiente Windows </TITULO-TESE>
-				<ORIENTADOR>Marcos José Santana. </ORIENTADOR>
-				<DURACAO>
-					<INICIO>1994</INICIO>
-					<CONCLUSAO>1996</CONCLUSAO>
-				</DURACAO>	
-			</MESTRADO>
-			<DOUTORADO status="concluido">
-				<TITULO> Doutorado em Física Aplicada Opção Em Física Computacional. </TITULO>
-				<INSTITUICAO codigo="000200000993"> Instituto de Física de São Carlos Usp </INSTITUICAO>
-				<TITULO-TESE> AMIGO: uma contribuição para a convergência na área de escalonamento de processos </TITULO-TESE>
-				<ORIENTADOR>Marcos José Santana. </ORIENTADOR>
-				<DURACAO>
-					<INICIO>1996</INICIO>
-					<CONCLUSAO>2000</CONCLUSAO>
-				</DURACAO>	
-			</DOUTORADO>
-		</FORMACAO-ACADEMICA>	
-	</INFORMACOES-PESSOAIS>
+	</INFORMACOES-PESSOAIS>	
+	<FORMACAO-ACADEMICA>
+		<GRADUACAO status="concluido">
+			<TITULO>Graduação em Bacharel Em Processamento de Dados. </TITULO>
+			<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
+			<TITULO-TCC> Tecnologia da Informação Aplicada à Medicina. </TITULO-TCC>
+			<ORIENTADOR> Luis Fernando Wambier. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1988</INICIO>
+				<CONCLUSAO>1990</CONCLUSAO>
+			</DURACAO>	
+		</GRADUACAO>
+		<ESPECIALIZACAO status="concluido">
+			<TITULO> Especialização Em Ciências da Computação. </TITULO>
+			<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
+			<ORIENTADOR> João Umberto Furquim de Souza. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1991</INICIO>
+				<CONCLUSAO>1992</CONCLUSAO>
+			</DURACAO>	
+		</ESPECIALIZACAO>
+		<MESTRADO status="concluido">
+			<TITULO> Mestrado em Ciências de Computação e Matemática Computacional.  </TITULO>
+			<INSTITUICAO codigo="006742000000"> Instituto de Ciências Matemáticas e de Computação Usp São Carlos </INSTITUICAO>
+			<TITULO-TESE> Máquina Paralela Virtual em Ambiente Windows </TITULO-TESE>
+			<ORIENTADOR>Marcos José Santana. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1994</INICIO>
+				<CONCLUSAO>1996</CONCLUSAO>
+			</DURACAO>	
+		</MESTRADO>
+		<DOUTORADO status="concluido">
+			<TITULO> Doutorado em Física Aplicada Opção Em Física Computacional. </TITULO>
+			<INSTITUICAO codigo="000200000993"> Instituto de Física de São Carlos Usp </INSTITUICAO>
+			<TITULO-TESE> AMIGO: uma contribuição para a convergência na área de escalonamento de processos </TITULO-TESE>
+			<ORIENTADOR>Marcos José Santana. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1996</INICIO>
+				<CONCLUSAO>2000</CONCLUSAO>
+			</DURACAO>	
+		</DOUTORADO>
+	</FORMACAO-ACADEMICA>	
 	<PUBLICACOES>
-
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>SOUZA, S. R. S.</AUTOR>
+			<AUTOR>SOUZA, P. S. L.</AUTOR>
+			<AUTOR>BRITO, M. A. S.</AUTOR> 
+			<AUTOR>SIMAO, A. S.</AUTOR>
+			<AUTOR>ZALUSKA, E. J.</AUTOR>
+			<TITULO>Empirical evaluation of a new composite approach to the coverage criteria and reachability testing of concurrent programs</TITULO>
+			<AREA>Software Testing, Verification and Reliability</AREA>
+			<ANO>2015</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>SOUZA, S. R. S.</AUTOR>
+			<AUTOR>SOUZA, P. S. L.</AUTOR>
+			<AUTOR>ZALUSKA, E. J.</AUTOR>
+			<TITULO>Structural testing for message-passing concurrent programs: an-extended test model</TITULO>
+			<AREA>Concurrency and Computation</AREA>
+			<ANO>2014</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>Santana, R.H.C.</AUTOR>
+			<AUTOR>SOUZA, P. S. L.</AUTOR>
+			<AUTOR>ZALUSKA, E. J.</AUTOR>
+			<AUTOR>Santana, M.J.</AUTOR>
+			<AUTOR>Estrella, J.C.</AUTOR>
+			<TITULO>Load Index Metrics for an Optimized Management of Web Services: A Systematic Evaluation</TITULO>
+			<AREA>Evolutionary Computation</AREA>
+			<ANO>2013</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="capitulo_livro">
+			<AUTOR>Lima, T.W.</AUTOR>
+			<AUTOR>Caliri, A.</AUTOR>
+			<AUTOR>Silva, F.L.B.</AUTOR>
+			<AUTOR>Tinos, R.</AUTOR>
+			<AUTOR>SOUZA, P. S. L.</AUTOR>
+			<AUTOR>Delbem, A.C.B.</AUTOR>
+			<AUTOR>Bonatto, V.</AUTOR>
+			<TITULO>Some Modeling Issues for Protein Structure Prediction using Evolutionary Algorithms</TITULO>
+			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
+			<AREA>Evolutionary Computation</AREA>
+			<ANO>2009</ANO>
+		</PUBLICACAO>	
+		<PUBLICACAO tipo="trabalho">
+			<AUTOR>TIOSSO, F.</AUTOR>
+			<AUTOR>Bruschi, S.M.</AUTOR>
+			<AUTOR>SOUZA, PAULO S. L.</AUTOR>
+			<AUTOR>BARBOSA, E. F.</AUTOR>
+			<TITULO>Amnesia: um Objeto de Aprendizagem para o Ensino de Hierarquia de Memória</TITULO>
+			<IN>In: 25º Simpósio Brasileiro de Informática na Educação, Dourados</IN>
+			<AREA>Recursos Educacionais Abertos</AREA>
+			<ANO>2014</ANO>
+		</PUBLICACAO>	
+		<PUBLICACAO tipo="trabalho">
+			<AUTOR>BRITO, MARIA.</AUTOR>
+			<AUTOR>SANTOS, MARCOS.</AUTOR>
+			<AUTOR>SOUZA, PAULO.</AUTOR>
+			<AUTOR>SOUZA, SIMONE.</AUTOR>
+			<TITULO>Integration testing criteria for mobile robotic systems</TITULO>
+			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
+			<AREA>Evolutionary Computation</AREA>
+			<ANO>2015</ANO>
+		</PUBLICACAO>	
 	</PUBLICACOES>
 	<ORIENTACOES>
-		<DISSERTACAO-MESTRADO status="concluido">
-			<MESTRANDO>Raphael Negrisoli Batista</MESTRANDO>
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Raphael Negrisoli Batista</ALUNO>
 			<TITULO>Desenvolvimento de um framework teórico para teste estrutural distribuído</TITULO>
 			<ANO>2015</ANO>
 			<INSTITUICAO codigo="006742000000">nstituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</DISSERTACAO-MESTRADO>
+		</ORIENTACAO>
 
-		<DISSERTACAO-MESTRADO status="concluido">
-			<MESTRANDO>Mário Cesar da Cunha Machado</MESTRANDO>
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Mário Cesar da Cunha Machado</ALUNO>
 			<TITULO>Avaliando a Eficácia de Critérios de Teste para Programas Concorrentes</TITULO>
 			<ANO>2011</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</DISSERTACAO-MESTRADO>
+		</ORIENTACAO>
 
-		<DISSERTACAO-MESTRADO status="andamento">
-			<MESTRANDO>Zhang Yifei</MESTRANDO>
+		<ORIENTACAO tipo="mestrado" status="andamento">
+			<ALUNO>Zhang Yifei</ALUNO>
 			<TITULO>Estudo e simulação de algoritmos de escalonamento para grades móveis voltados à conectividade dos dispositivos móveis</TITULO>
 			<ANO>2014</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</DISSERTACAO-MESTRADO>
+		</ORIENTACAO>
 
-		<DISSERTACAO-MESTRADO status="andamento">
-			<MESTRANDO>Frederico Cassis Ribeiro Santos</MESTRANDO>
+		<ORIENTACAO tipo="mestrado" status="andamento">
+			<ALUNO>Frederico Cassis Ribeiro Santos</ALUNO>
 			<TITULO>Análise de execução de aplicações paralelas em grades móveis com restrições de processamento e bateria</TITULO>
 			<ANO>2013</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</DISSERTACAO-MESTRADO>
+		</ORIENTACAO>
 
-		<TESE-DOUTORADO status="andamento">
-			<DOUTORANDO>Helder Jefferson Ferreira da Luz</DOUTORANDO>
+		<ORIENTACAO tipo="doutorado" status="andamento">
+			<ALUNO>Helder Jefferson Ferreira da Luz</ALUNO>
 			<TITULO>Teste de Programas Concorrentes em CUDA</TITULO>
 			<ANO>2014</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</TESE-DOUTORADO>
+		</ORIENTACAO>
 		
-		<INICIACAO-CIENTIFICA status="concluido">
+		<ORIENTACAO tipo="iniciacao" status="concluido">
 			<ALUNO>Murilo Giacometti Rocha</ALUNO>
 			<TITULO>Avaliação de um Novo Modelo de Teste Estrutural para Programas Concorrentes</TITULO>
 			<ANO>2012</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</INICIACAO-CIENTIFICA>
+		</ORIENTACAO>
 
-		<INICIACAO-CIENTIFICA status="concluido">
+		<ORIENTACAO tipo="iniciacao" status="concluido">
 			<ALUNO>Rafael Regis do Prado</ALUNO>
 			<TITULO>Extensão das funcionalidades da ferramenta de testes ValiMPI</TITULO>
 			<ANO>2011</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
-		</INICIACAO-CIENTIFICA>
-
-	</ORIENTACOES>	
+		</ORIENTACAO>
+	</ORIENTACOES>		
 </CURRICULO>
