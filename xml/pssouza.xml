@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/inf_pessoal.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./xsl/orientacoes.xsl"?>
 <CURRICULO id="curriculo">	
 	<NOME>Paulo Sérgio Lopes de Souza</NOME>
 	<AVATAR src="./img/avatar.jpg"/>
@@ -85,7 +86,58 @@
 		</FORMACAO-ACADEMICA>	
 	</INFORMACOES-PESSOAIS>
 	<PUBLICACOES>
+
 	</PUBLICACOES>
 	<ORIENTACOES>
+		<DISSERTACAO-MESTRADO status="concluido">
+			<MESTRANDO>Raphael Negrisoli Batista.</MESTRANDO>
+			<TITULO>Desenvolvimento de um framework teórico para teste estrutural distribuído.</TITULO>
+			<ANO>2015</ANO>
+			<INSTITUICAO codigo="006742000000">nstituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</DISSERTACAO-MESTRADO>
+
+		<DISSERTACAO-MESTRADO status="concluido">
+			<MESTRANDO>Mário Cesar da Cunha Machado</MESTRANDO>
+			<TITULO>Avaliando a Eficácia de Critérios de Teste para Programas Concorrentes</TITULO>
+			<ANO>2011</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</DISSERTACAO-MESTRADO>
+
+		<DISSERTACAO-MESTRADO status="andamento">
+			<MESTRANDO>Zhang Yifei</MESTRANDO>
+			<TITULO>Estudo e simulação de algoritmos de escalonamento para grades móveis voltados à conectividade dos dispositivos móveis.</TITULO>
+			<ANO>2014</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos 
+			</INSTITUICAO>
+		</DISSERTACAO-MESTRADO>
+
+		<DISSERTACAO-MESTRADO status="andamento">
+			<MESTRANDO>Frederico Cassis Ribeiro Santos.</MESTRANDO>
+			<TITULO>Análise de execução de aplicações paralelas em grades móveis com restrições de processamento e bateria.</TITULO>
+			<ANO>2013</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</DISSERTACAO-MESTRADO>
+
+		<TESE-DOUTORADO status="andamento">
+			<DOUTORANDO>Helder Jefferson Ferreira da Luz.</DOUTORANDO>
+			<TITULO>Teste de Programas Concorrentes em CUDA.</TITULO>
+			<ANO>2014</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</TESE-DOUTORADO>
+		
+		<INICIACAO-CIENTIFICA status="concluido">
+			<ALUNO>Murilo Giacometti Rocha</ALUNO>
+			<TITULO>Avaliação de um Novo Modelo de Teste Estrutural para Programas Concorrentes</TITULO>
+			<ANO>2012</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</INICIACAO-CIENTIFICA>
+
+		<INICIACAO-CIENTIFICA status="concluido">
+			<ALUNO>Rafael Regis do Prado.</ALUNO>
+			<TITULO>Extensão das funcionalidades da ferramenta de testes ValiMPI.</TITULO>
+			<ANO>2011</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</INICIACAO-CIENTIFICA>
+
 	</ORIENTACOES>	
 </CURRICULO>

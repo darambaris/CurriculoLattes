@@ -50,7 +50,7 @@ body {
       /* quando o botão foi clicado */
       .abas ul li.ativo {
         background-color: #FFF;
-        color:#01528f;   
+        color: #0059b3;   
         border-bottom: none;   
         position: relative;
         z-index: 2;  

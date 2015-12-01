@@ -1,8 +1,7 @@
 body #curriculo {
 	background-color: #FFF;
 	padding: 15px;
-	color: #666;
-	margin-top: 20px;
+	color: #767676;
 	font-family: Verdana;
 }
 #curriculo b {
@@ -14,14 +13,14 @@ body #curriculo {
 #curriculo h1 {
 	font-weight: bold;
 	font-size: 25px;
-	border-bottom: 1px solid #b3d1ff;
-	color: #01528f;
+	border-bottom: 1px solid #0059b3;
+	color: #0059b3;
 }
 
 #curriculo h2 {
 	font-size: 20px;
 	color: #0059b3;
-	border-bottom: 1px solid #b3d1ff;
+	border-bottom: 1px solid #0059b3;
 }
 
 #curriculo .avatar {
