@@ -46,6 +46,7 @@ body #curriculo {
 }
 	#curriculo table tr td {
 		padding: 5px 5px 5px 15px;
+		line-height: 18px;
 		
 	}
 	#curriculo table tr td:nth-child(1){

@@ -45,8 +45,8 @@
 				<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
 				<ORIENTADOR> João Umberto Furquim de Souza. </ORIENTADOR>
 				<DURACAO>
-					<INICIO>1994</INICIO>
-					<CONCLUSAO>1996</CONCLUSAO>
+					<INICIO>1991</INICIO>
+					<CONCLUSAO>1992</CONCLUSAO>
 				</DURACAO>	
 			</ESPECIALIZACAO>
 			<MESTRADO status="concluido">
@@ -62,7 +62,7 @@
 			<DOUTORADO status="concluido">
 				<TITULO> Doutorado em Física Aplicada Opção Em Física Computacional. </TITULO>
 				<INSTITUICAO codigo="000200000993"> Instituto de Física de São Carlos Usp </INSTITUICAO>
-				<TITULO-TESE> AMIGO: uma contribuição para a convergência na área de escalonamento de processos, Ano de obtenção: 2000. </TITULO-TESE>
+				<TITULO-TESE> AMIGO: uma contribuição para a convergência na área de escalonamento de processos </TITULO-TESE>
 				<ORIENTADOR>Marcos José Santana. </ORIENTADOR>
 				<DURACAO>
 					<INICIO>1996</INICIO>
