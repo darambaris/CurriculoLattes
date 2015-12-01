@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/inf_pessoal.xsl"?>
+<!-- *************************************************************************************
+Nome: Jéssika Darambaris Oliveira No: 7961026
+Nome: Vitor P. Ribeiro No: 7961005
+
+Arquivo: pssouza.xml
+Descricao: XML baseado nas informações do Currículo Lattes do prof. Paulo Sérgio Lopes de Souza
+************************************************************************************** -->
 <?xml-stylesheet type="text/xsl" href="./xsl/academica.xsl"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/orientacoes.xsl"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/publicacoes.xsl"?>
-<CURRICULO id="curriculo">	
+<CURRICULO id="curriculo" xmlns="http://www.multimidia-lattes.com/lattes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.multimidia-lattes.com/lattes ./xsd/curriculo.xsd">	
 	<NOME>Paulo Sérgio Lopes de Souza</NOME>
 	<AVATAR src="./img/avatar.jpg"/>
 	<RESUMO-CV>
@@ -24,24 +30,24 @@
 				<INSTITUICAO codigo="006700000002">Universidade de São Paulo</INSTITUICAO>
 				<ORGAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação</ORGAO>
 				<LOGRADOURO-COMPLETO>Av. Trabalhador São-carlense, 400</LOGRADOURO-COMPLETO>
-				<CEP>13560970</CEP>
+				<CEP>13560-970</CEP>
 				<BAIRRO>Centro</BAIRRO>
 				<CIDADE>São Carlos</CIDADE>
 				<PAIS>Brasil</PAIS>
 				<TELEFONE>
 					<DDD>16</DDD>
-					<NUMERO>33736623</NUMERO>
+					<NUMERO>3373-6623</NUMERO>
 				</TELEFONE>
 			</ENDERECO-PROFISSIONAL>	
 			<ENDERECO-PESSOAL>
 				<LOGRADOURO-COMPLETO>Rua Sebastião de Moraes, 233</LOGRADOURO-COMPLETO>
-				<CEP>13562030</CEP>
+				<CEP>13562-030</CEP>
 				<BAIRRO>Centro</BAIRRO>
 				<CIDADE>São Carlos</CIDADE>
 				<PAIS>Brasil</PAIS>
 				<TELEFONE>
 					<DDD>16</DDD>
-					<NUMERO>33722244</NUMERO>
+					<NUMERO>3372-2244</NUMERO>
 				</TELEFONE>
 			</ENDERECO-PESSOAL>	
 		</ENDERECO>
@@ -49,7 +55,7 @@
 	<FORMACAO-ACADEMICA>
 		<GRADUACAO status="concluido">
 			<TITULO>Graduação em Bacharel Em Processamento de Dados. </TITULO>
-			<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
+			<INSTITUICAO codigo="006742000000">Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
 			<TITULO-TCC> Tecnologia da Informação Aplicada à Medicina. </TITULO-TCC>
 			<ORIENTADOR> Luis Fernando Wambier. </ORIENTADOR>
 			<DURACAO>
@@ -59,7 +65,7 @@
 		</GRADUACAO>
 		<ESPECIALIZACAO status="concluido">
 			<TITULO> Especialização Em Ciências da Computação. </TITULO>
-			<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
+			<INSTITUICAO codigo="006742000000">Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
 			<ORIENTADOR> João Umberto Furquim de Souza. </ORIENTADOR>
 			<DURACAO>
 				<INICIO>1991</INICIO>
@@ -95,7 +101,7 @@
 			<AUTOR>SIMAO, A. S.</AUTOR>
 			<AUTOR>ZALUSKA, E. J.</AUTOR>
 			<TITULO>Empirical evaluation of a new composite approach to the coverage criteria and reachability testing of concurrent programs</TITULO>
-			<AREA>Software Testing, Verification and Reliability</AREA>
+			<TITULO-PUBLICACAO>Software Testing, Verification and Reliability</TITULO-PUBLICACAO>
 			<ANO>2015</ANO>
 		</PUBLICACAO>
 		<PUBLICACAO tipo="artigo">
@@ -103,7 +109,7 @@
 			<AUTOR>SOUZA, P. S. L.</AUTOR>
 			<AUTOR>ZALUSKA, E. J.</AUTOR>
 			<TITULO>Structural testing for message-passing concurrent programs: an-extended test model</TITULO>
-			<AREA>Concurrency and Computation</AREA>
+			<TITULO-PUBLICACAO>Concurrency and Computation</TITULO-PUBLICACAO>
 			<ANO>2014</ANO>
 		</PUBLICACAO>
 		<PUBLICACAO tipo="artigo">
@@ -113,7 +119,7 @@
 			<AUTOR>Santana, M.J.</AUTOR>
 			<AUTOR>Estrella, J.C.</AUTOR>
 			<TITULO>Load Index Metrics for an Optimized Management of Web Services: A Systematic Evaluation</TITULO>
-			<AREA>Evolutionary Computation</AREA>
+			<TITULO-PUBLICACAO>Evolutionary Computation</TITULO-PUBLICACAO>
 			<ANO>2013</ANO>
 		</PUBLICACAO>
 		<PUBLICACAO tipo="capitulo_livro">
@@ -126,7 +132,7 @@
 			<AUTOR>Bonatto, V.</AUTOR>
 			<TITULO>Some Modeling Issues for Protein Structure Prediction using Evolutionary Algorithms</TITULO>
 			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
-			<AREA>Evolutionary Computation</AREA>
+			<TITULO-PUBLICACAO>Evolutionary Computation</TITULO-PUBLICACAO>
 			<ANO>2009</ANO>
 		</PUBLICACAO>	
 		<PUBLICACAO tipo="trabalho">
@@ -136,7 +142,7 @@
 			<AUTOR>BARBOSA, E. F.</AUTOR>
 			<TITULO>Amnesia: um Objeto de Aprendizagem para o Ensino de Hierarquia de Memória</TITULO>
 			<IN>In: 25º Simpósio Brasileiro de Informática na Educação, Dourados</IN>
-			<AREA>Recursos Educacionais Abertos</AREA>
+			<TITULO-PUBLICACAO>Recursos Educacionais Abertos</TITULO-PUBLICACAO>
 			<ANO>2014</ANO>
 		</PUBLICACAO>	
 		<PUBLICACAO tipo="trabalho">
@@ -146,7 +152,7 @@
 			<AUTOR>SOUZA, SIMONE.</AUTOR>
 			<TITULO>Integration testing criteria for mobile robotic systems</TITULO>
 			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
-			<AREA>Evolutionary Computation</AREA>
+			<TITULO-PUBLICACAO>Evolutionary Computation</TITULO-PUBLICACAO>
 			<ANO>2015</ANO>
 		</PUBLICACAO>	
 	</PUBLICACOES>

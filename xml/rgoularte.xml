@@ -1,0 +1,320 @@
+<?xml-stylesheet type="text/xsl" href="./xsl/inf_pessoal.xsl"?>
+<!-- *************************************************************************************
+Nome: Jéssika Darambaris Oliveira No: 7961026
+Nome: Vitor P. Ribeiro No: 7961005
+
+Arquivo: rgoularte.xml
+Descricao: XML baseado nas informações do Currículo Lattes do prof. Rudinei Goularte
+************************************************************************************** -->
+<?xml-stylesheet type="text/xsl" href="./xsl/academica.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./xsl/orientacoes.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./xsl/publicacoes.xsl"?>
+<CURRICULO id="curriculo" xmlns="http://www.multimidia-lattes.com/lattes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.multimidia-lattes.com/lattes ./xsd/curriculo.xsd">	
+	<NOME>Rudinei Goularte</NOME>
+	<AVATAR src="./img/avatar.jpg"/>
+	<RESUMO-CV>
+		Possui graduação em Ciências da Computação pela Universidade Federal de Mato Grosso do Sul (1995). Possui mestrado (1998), doutorado (2003) e livre-docência (2011) pela Universidade de São Paulo [São Carlos], todos em Ciência da Computação. Atualmente é professor associado do ICMC/USP em regime de dedicação integral à docência e à pesquisa e orientador pleno de mestrado e doutorado. Atua como consultor ad hoc da Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP) e do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq). Desenvolve pesquisa em Multimídia nas linhas: codificação de vídeo digital, vídeo 3D, recuperação baseada em conteúdo, personalização de conteúdo e tv interativa.
+	</RESUMO-CV>
+	<INFORMACOES-PESSOAIS>
+		<IDENTIFICACAO>
+			<NOME>Rudinei Goularte</NOME>
+			<CITACAO-BIBLIOGRAFICA>GOULARTE, R</CITACAO-BIBLIOGRAFICA>	
+			<CITACAO-BIBLIOGRAFICA>Goularte, Rudinei</CITACAO-BIBLIOGRAFICA>
+		</IDENTIFICACAO>
+		<!-- indica qual endereço deve aparecer na página (profissinal, pessoal ou ambos) -->
+		<ENDERECO preferencia="profissional">
+			<ENDERECO-PROFISSIONAL>
+				<INSTITUICAO codigo="006700000002">Universidade de São Paulo</INSTITUICAO>
+				<ORGAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação</ORGAO>
+				<LOGRADOURO-COMPLETO>Av. Trabalhador São-carlense, 400</LOGRADOURO-COMPLETO>
+				<CEP>13560-970</CEP>
+				<BAIRRO>Centro</BAIRRO>
+				<CIDADE>São Carlos</CIDADE>
+				<PAIS>Brasil</PAIS>
+				<TELEFONE>
+					<DDD>16</DDD>
+					<NUMERO>3373-6623</NUMERO>
+				</TELEFONE>
+			</ENDERECO-PROFISSIONAL>	
+			<ENDERECO-PESSOAL>
+				<LOGRADOURO-COMPLETO>R. 28 de Setembro, 2350, ap 54</LOGRADOURO-COMPLETO>
+				<CEP>13560-270</CEP>
+				<BAIRRO>Centro</BAIRRO>
+				<CIDADE>São Carlos</CIDADE>
+				<PAIS>Brasil</PAIS>
+				<TELEFONE>
+					<DDD>16</DDD>
+					<NUMERO>3412-5678</NUMERO>
+				</TELEFONE>
+			</ENDERECO-PESSOAL>	
+		</ENDERECO>
+	</INFORMACOES-PESSOAIS>	
+	<FORMACAO-ACADEMICA>
+		<GRADUACAO status="concluido">
+			<TITULO>Graduação em Bacharel Em Ciência da Computação. </TITULO>
+			<INSTITUICAO codigo="006742000000">Universidade Federal de Mato Grosso do Sul. </INSTITUICAO>
+			<TITULO-TCC> Não informado. </TITULO-TCC>
+			<ORIENTADOR> Não informado. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1992</INICIO>
+				<CONCLUSAO>1995</CONCLUSAO>
+			</DURACAO>	
+		</GRADUACAO>
+		<MESTRADO status="concluido">
+			<TITULO> Mestrado em Ciências de Computação e Matemática Computacional.  </TITULO>
+			<INSTITUICAO codigo="006742000000"> Instituto de Ciências Matemáticas e de Computação Usp São Carlos </INSTITUICAO>
+			<TITULO-TESE> Utilização de Metadados no Gerenciamento de Acesso a Servidores Multimídia </TITULO-TESE>
+			<ORIENTADOR>Edson dos Santos Moreira. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1996</INICIO>
+				<CONCLUSAO>1998</CONCLUSAO>
+			</DURACAO>	
+		</MESTRADO>
+		<DOUTORADO status="concluido">
+			<TITULO> Doutorado em Ciências de Computação e Matemática Computacional. </TITULO>
+			<INSTITUICAO codigo="006742000000"> Instituto de Ciências Matemáticas e de Computação Usp São Carlos </INSTITUICAO>
+			<TITULO-TESE> Personalização e adaptação de conteúdo baseadas em contexto para TV Interativa. </TITULO-TESE>
+			<ORIENTADOR>Edson dos Santos Moreira. </ORIENTADOR>
+			<DURACAO>
+				<INICIO>1999</INICIO>
+				<CONCLUSAO>2003</CONCLUSAO>
+			</DURACAO>	
+		</DOUTORADO>
+	</FORMACAO-ACADEMICA>	
+	<PUBLICACOES>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MOREIRA, E. D. S.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Managing Access to a Video Server Through a Metadata Base</TITULO>
+			<TITULO-PUBLICACAO>International Journal of Computers and Applications</TITULO-PUBLICACAO>
+			<ANO>2001</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>SANTOS JÚNIOR, J. B.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>MOREIRA, E. D. S.</AUTOR>
+			<AUTOR>FARIA, G. B.</AUTOR>
+			<TITULO>The Modelling of Structured Context-Aware Interactive Environments</TITULO>
+			<TITULO-PUBLICACAO>Journal of Integrated Design and Process Science</TITULO-PUBLICACAO>
+			<ANO>2001</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>PISSIOLI, M.</AUTOR>
+			<AUTOR>MOREIRA, E. D. S.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Experiments for Analysis of Video Transmission via ATM</TITULO>
+			<TITULO-PUBLICACAO>Journal of Computer Science and Technology (La Plata)</TITULO-PUBLICACAO>
+			<ANO>2002</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>CASTRO, M. A. S.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>REAMI, E. R.</AUTOR>
+			<AUTOR>MOREIRA, E. D. S.</AUTOR>
+			<TITULO>Infra-Estrutura De Suporte A Editoração De Material Didático Utilizando Multimídia</TITULO>
+			<TITULO-PUBLICACAO>Revista Brasileira de Informática na Educação</TITULO-PUBLICACAO>
+			<ANO>1997</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>PIMENTEL, Maria da Graca Campos</AUTOR>
+			<AUTOR>MOREIRA, E. D. S.</AUTOR>
+			<TITULO>Context-Aware Support in Structured Documents for Interactive-TV</TITULO>
+			<TITULO-PUBLICACAO>Multimedia Systems</TITULO-PUBLICACAO>
+			<ANO>2006</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>CATTELAN, R. G.</AUTOR>
+			<AUTOR>Teixeira, Cesar</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>PIMENTEL, Maria da Graca Campos</AUTOR>
+			<TITULO>Watch-and-comment as a paradigm toward ubiquitous interactive video editing</TITULO>
+			<TITULO-PUBLICACAO>ACM Transactions on Multimedia Computing Communications and Applications</TITULO-PUBLICACAO>
+			<ANO>2008</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MANZATO, M. G.</AUTOR>
+			<AUTOR>MACEDO, A. A.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Evaluation of Video News Classification Techniques for Automatic Content Personalization</TITULO>
+			<TITULO-PUBLICACAO>International Journal of Advanced Media and Communication</TITULO-PUBLICACAO>
+			<ANO>2009</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>CARVALHO, Diego Fiori de</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>MP4Stego: Steganography in MPEG-4 Videos</TITULO>
+			<TITULO-PUBLICACAO>International Journal of Advanced Media and Communication</TITULO-PUBLICACAO>
+			<ANO>2009</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MELLO, R. F.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>Dodonov, Evgueni</AUTOR>
+			<AUTOR>Yang, Laurence T.</AUTOR>
+			<AUTOR>Park, Jong Hyuk</AUTOR>
+			<AUTOR>Kim, Tai-hoon</AUTOR>
+			<TITULO>On modeling and evaluating multicomputer transcoding architectures for live-video streams</TITULO>
+			<TITULO-PUBLICACAO>Multimedia Tools and Applications</TITULO-PUBLICACAO>
+			<ANO>2009</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MANZATO, M. G.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Peersommender: A peer-level annotation based approach for multimedia recommendation</TITULO>
+			<TITULO-PUBLICACAO>Journal of Information and Data Management - JIDM</TITULO-PUBLICACAO>
+			<ANO>2010</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MANZATO, M. G.</AUTOR>
+			<AUTOR>COIMBRA, D. B.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>An enhanced content selection mechanism for personalization of video news programmes</TITULO>
+			<TITULO-PUBLICACAO>Multimedia Systems</TITULO-PUBLICACAO>
+			<ANO>2011</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>LOPES, B.L.</AUTOR>
+			<AUTOR>TROJAHN, T.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Video Scene Detection by Multimodal Bag of Features</TITULO>
+			<TITULO-PUBLICACAO>Journal of Information and Data Management - JIDM</TITULO-PUBLICACAO>
+			<ANO>2014</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>SANTOS JUNIOR, E. B.</AUTOR>
+			<AUTOR>TROJAHN, T.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Evaluating the impact of demographic data on a hybrid recommender model</TITULO>
+			<TITULO-PUBLICACAO>IADIS International Journal on WWWInternet</TITULO-PUBLICACAO>
+			<ANO>2014</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>SANTOS JUNIOR, E. B.</AUTOR>
+			<AUTOR>ZINGARELLI, MATHEUS R. U.</AUTOR>
+			<AUTOR>SILVA, RODOLFO R.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>A new approach to spatial compression of stereoscopic videos (DOI: 10.1007/s11042-012-1300-0)</TITULO>
+			<TITULO-PUBLICACAO>Multimedia Tools and Applications</TITULO-PUBLICACAO>
+			<ANO>2014</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>MANZATO, M. G.</AUTOR>
+			<AUTOR>SANTOS JUNIOR, E. B.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Leveraging Hybrid Recommenders with Multifaceted Implicit Feedback</TITULO>
+			<TITULO-PUBLICACAO>Journal of Universal Computer Science (Online)</TITULO-PUBLICACAO>
+			<ANO>2015</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="artigo">
+			<AUTOR>VILLENA, JOHANA M. ROSAS</AUTOR>
+			<AUTOR>RAMOS, BRUNO C.</AUTOR>
+			<AUTOR>FORTES, R. P. M.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>An Accessible Video Player for Older People: Issues from a User Test</TITULO>
+			<TITULO-PUBLICACAO>Procedia Computer Science</TITULO-PUBLICACAO>
+			<ANO>2014</ANO>
+		</PUBLICACAO>
+		<PUBLICACAO tipo="capitulo_livro">
+			<AUTOR>PIMENTEL, Maria da Graca Campos</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Multimídia, Web semântica e engenharia de documentos aplicados à Computação Ubíqua</TITULO>
+			<IN>Rogério Ferreira Rodriges; César C. Teixeira; José Valdeni de Lima(Org.)</IN>
+			<TITULO-PUBLICACAO>WebMedia 2007 - Mini-cursos</TITULO-PUBLICACAO>
+			<ANO>2007</ANO>
+		</PUBLICACAO>	
+		<PUBLICACAO tipo="trabalho">
+			<AUTOR>TIOSSO, F.</AUTOR>
+			<AUTOR>Bruschi, S.M.</AUTOR>
+			<AUTOR>SOUZA, PAULO S. L.</AUTOR>
+			<AUTOR>BARBOSA, E. F.</AUTOR>
+			<TITULO>Amnesia: um Objeto de Aprendizagem para o Ensino de Hierarquia de Memória</TITULO>
+			<IN>In: 25º Simpósio Brasileiro de Informática na Educação, Dourados</IN>
+			<TITULO-PUBLICACAO>Recursos Educacionais Abertos</TITULO-PUBLICACAO>
+			<ANO>2014</ANO>
+		</PUBLICACAO>	
+		<PUBLICACAO tipo="trabalho">
+			<AUTOR>BRITO, MARIA.</AUTOR>
+			<AUTOR>SANTOS, MARCOS.</AUTOR>
+			<AUTOR>SOUZA, PAULO.</AUTOR>
+			<AUTOR>SOUZA, SIMONE.</AUTOR>
+			<TITULO>Integration testing criteria for mobile robotic systems</TITULO>
+			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
+			<TITULO-PUBLICACAO>Evolutionary Computation</TITULO-PUBLICACAO>
+			<ANO>2015</ANO>
+		</PUBLICACAO>	
+	</PUBLICACOES>
+	<ORIENTACOES>
+		<ORIENTACAO tipo="mestrado" status="andamento">
+			<ALUNO>Felipe Maciel Rodrigues</ALUNO>
+			<TITULO>Reversão anaglífica direta</TITULO>
+			<ANO>2013</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="doutorado" status="andamento">
+			<ALUNO>Johana Maria Rosas Villena</ALUNO>
+			<TITULO>Interação multimodal multímidia como subsídio para usabilidade e acessibilidade.</TITULO>
+			<ANO>2011</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="iniciacao" status="andamento">
+			<ALUNO>Gabriel Fernandes Gonzales</ALUNO>
+			<TITULO>Autoria de conteúdo alternativo para tornar o vídeo acessível</TITULO>
+			<ANO>2015</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+		
+
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Tamires Tessarolli de Souza Barbieri</ALUNO>
+			<TITULO>Representação de Tomadas como Suporte à Segmentação em Cenas</TITULO>
+			<ANO>2014</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Tiago Henrique Trojahn</ALUNO>
+			<TITULO>Segmentação Automática de Vídeo em Cenas Baseada em Coerência entre Tomadas</TITULO>
+			<ANO>2014</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Robson Eisinger</ALUNO>
+			<TITULO>Adaptação Dinâmica de Vídeo</TITULO>
+			<ANO>2007</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="mestrado" status="concluido">
+			<ALUNO>Marcelo Garcia Manzato</ALUNO>
+			<TITULO>Adaptação de vídeo ao vivo apoiada em informações de contexto</TITULO>
+			<ANO>2006</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="doutorado" status="concluido">
+			<ALUNO>Leonardo Antônio de Andrade</ALUNO>
+			<TITULO>Compressão espacial de vídeos estereoscópicos: uma abordagem baseada em codificação anaglífica</TITULO>
+			<ANO>2012</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="iniciacao" status="concluido">
+			<ALUNO>Giulia Fragoso Grigoli</ALUNO>
+			<TITULO>Segmentação de vídeo digital como suporte à personalização multimídia</TITULO>
+			<ANO>2014</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+		<ORIENTACAO tipo="iniciacao" status="concluido">
+			<ALUNO>Robison Willian Rodrigues dos Santos</ALUNO>
+			<TITULO>Automatização de Aquisição de Metadados sobre Objetos Multimídia</TITULO>
+			<ANO>2007</ANO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
+		</ORIENTACAO>
+
+	</ORIENTACOES>		
+</CURRICULO>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- *************************************************************************************
+Nome: Jéssika Darambaris Oliveira No: 7961026
+Nome: Vitor P. Ribeiro No: 7961005
+
+Arquivo: curriculo.xsd
+Descricao: XMLSchema responsável por validar os arquivos XMLs encontrados na pasta XML.
+************************************************************************************** -->
+<xs:schema targetNamespace="http://www.multimidia-lattes.com/lattes" xmlns="http://www.multimidia-lattes.com/lattes" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- elemento raiz -->
+	<xs:element name="CURRICULO">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NOME" type="xs:string" />
+				<xs:element name="AVATAR" type="complex_photo" />
+				<xs:element name="RESUMO-CV" type="xs:string" />
+				<xs:element name="INFORMACOES-PESSOAIS" type="complex_info_pessoal"/>
+				<xs:element name="FORMACAO-ACADEMICA" type="complex_academica"/>
+				<xs:element name="PUBLICACOES" type="complex_publicacoes"/>
+				<xs:element name="ORIENTACOES" type="complex_orientacoes"/>
+			</xs:sequence>	
+			<xs:attribute name="id" type="xs:string" fixed="curriculo" use="required"/>
+		</xs:complexType>	
+	</xs:element>
+	
+<!-- ***************** tipos complexos ********************************** -->	
+
+<!-- filhos do elemento CURRICULO -->
+	<xs:complexType name="complex_photo">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="src" type="url_photo"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="complex_info_pessoal">
+		<xs:sequence>
+			<xs:element name="IDENTIFICACAO" type="complex_identificacao"/>
+			<xs:element name="ENDERECO" type="complex_endereco"/>
+		</xs:sequence>
+	</xs:complexType>	
+	
+	<xs:complexType name="complex_academica">	
+		<xs:sequence>
+			<xs:element name="GRADUACAO" type="complex_type_academica"/>
+			<xs:element name="ESPECIALIZACAO" minOccurs="0" maxOccurs="5" type="complex_type_academica"/>
+			<xs:element name="MESTRADO" type="complex_type_academica"/>
+			<xs:element name="DOUTORADO" type="complex_type_academica"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="complex_publicacoes">	
+		<xs:sequence>
+			<xs:element name="PUBLICACAO" minOccurs="0" maxOccurs="100" type="complex_publicacao"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="complex_orientacoes">	
+		<xs:sequence>
+			<xs:element name="ORIENTACAO" minOccurs="0" maxOccurs="100" type="complex_orientacao"/>
+		</xs:sequence>
+	</xs:complexType>
+		
+<!-- filhos do elemento INFORMACOES-PESSOAIS -->
+	<xs:complexType name="complex_identificacao">
+		<xs:sequence>
+			<xs:element name="NOME" type="xs:string"/>
+			<xs:element name="CITACAO-BIBLIOGRAFICA" minOccurs="0" maxOccurs="30" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="complex_endereco">
+		<xs:sequence>
+			<xs:element name="ENDERECO-PROFISSIONAL" type="complex_type_end"/>
+			<xs:element name="ENDERECO-PESSOAL" type="complex_type_end"/>
+		</xs:sequence>
+		<xs:attribute name="preferencia" use="required" type="type_endereco" />
+	</xs:complexType>
+
+	<!-- filhos do elemento FORMACAO-ACADEMICA -->
+	<xs:complexType name="complex_type_academica">
+		<xs:sequence>
+			<xs:sequence>
+				<xs:element name="TITULO" type="xs:string"/>
+				<xs:element name="INSTITUICAO" type="attrib_instituicao"/>
+				<xs:choice minOccurs="0"> <!-- OPCIONAL --> 
+					<xs:element name="TITULO-TCC" type="xs:string"/>
+					<xs:element name="TITULO-TESE" type="xs:string"/>
+				</xs:choice>
+				<xs:element name="ORIENTADOR" type="xs:string"/>
+				<xs:element name="DURACAO" type="complex_duracao"/>
+			</xs:sequence>	
+		</xs:sequence>
+		<xs:attribute name="status" type="type_status"/>
+	</xs:complexType>	
+	
+	<!-- filhos do elemento PUBLICACAO -->
+	<xs:complexType name="complex_publicacao">
+		<xs:sequence>
+			<xs:element name="AUTOR" maxOccurs="20" type="xs:string" />
+			<xs:element name="TITULO" type="xs:string" />
+			<xs:element name="IN" type="xs:string" minOccurs="0" />
+			<xs:element name="TITULO-PUBLICACAO" type="xs:string" />
+			<xs:element name="ANO" type="type_ano" />
+		</xs:sequence>
+		<xs:attribute name="tipo" type="type_publicacao"/>
+	</xs:complexType>
+	
+	<!-- filhos do elemento ORIENTACAO -->
+	<xs:complexType name="complex_orientacao">
+		<xs:sequence>
+			<xs:element name="ALUNO" type="xs:string" />
+			<xs:element name="TITULO" type="xs:string" />
+			<xs:element name="ANO" type="type_ano" />
+			<xs:element name="INSTITUICAO" type="attrib_instituicao" />
+		</xs:sequence>
+		<xs:attribute name="tipo" type="type_orientacao"/>
+		<xs:attribute name="status" type="type_status"/>
+	</xs:complexType>
+	
+	<!-- filhos dos elementos ENDERECO-PROFISSIONAL e ENDERECO-PESSOAL -->
+	<xs:complexType name="complex_type_end">
+		<xs:sequence>
+			<!-- para facilitar análise foi considerado que a instuição e órgão 
+				são elementos opcionais --> 
+			<xs:element name="INSTITUICAO" minOccurs="0" type="attrib_instituicao"/>
+			<xs:element name="ORGAO" minOccurs="0" type="attrib_orgao"/>
+			<xs:element name="LOGRADOURO-COMPLETO" type="xs:string"/>
+			<xs:element name="CEP" type="type_CEP"/>
+			<xs:element name="BAIRRO" type="xs:string"/>
+			<xs:element name="CIDADE" type="xs:string"/>
+			<xs:element name="PAIS" type="type_pais"/>
+			<xs:element name="TELEFONE" type="complex_telefone"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- filhos do elemento DURACAO -->
+	<xs:complexType name="complex_duracao">
+		<xs:sequence>
+			<xs:element name="INICIO" type="type_ano"/>
+			<xs:element name="CONCLUSAO" type="type_ano"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- filhos do elemento TELEFONE -->
+	<xs:complexType name="complex_telefone">
+		<xs:sequence>
+			<xs:element name="DDD" type="type_ddd"/>
+			<xs:element name="NUMERO" type="type_numero"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+<!-- elementos texto com atributos --> 	
+	<xs:complexType name="attrib_instituicao">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="codigo" use="required" type="type_id"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>	
+	<xs:complexType name="attrib_orgao">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="codigo" use="required" type="type_id"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>	
+	
+<!-- tipos de variáveis -->	
+	<xs:simpleType name="url_photo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="./img/[A-Za-z0-9]{1,20}.(jpg|png|bmp)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_endereco">
+		<xs:restriction base="xs:string">
+			<!-- são opções que definem que endereços vão aparecer na página --> 
+			<xs:pattern value="(profissional|pessoal|ambos)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_status">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(andamento|concluido)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_ano">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1900"/>
+			<xs:maxInclusive value="2015"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_publicacao">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(livro|capitulo_livro|artigo|trabalho)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_orientacao">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(mestrado|doutorado|iniciacao)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_pais">
+		<xs:restriction base="xs:string">
+			<!-- para facilitar a formatação do cep e telefone, 
+			foi cnosiderado apenas o Brasil -->
+			<xs:pattern value="(Brasil|BR|BRASIL)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_CEP">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{5}-\d{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_ddd">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="11"/>
+			<xs:maxInclusive value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_numero">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{4}-\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="type_id">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="\d{12}"/>
+	</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
+
+
+

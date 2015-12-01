@@ -1,3 +1,12 @@
+
+/**************************************************************************************
+Nome: Jéssika Darambaris Oliveira No: 7961026
+Nome: Vitor P. Ribeiro No: 7961005
+
+Arquivo: format.css
+Descricao: arquivo que possui os estilos para classes contidas apenas dentro dos xsls.
+**************************************************************************************/
+
 body #curriculo {
 	background-color: #FFF;
 	padding: 15px;
@@ -11,6 +20,7 @@ body #curriculo {
 	font-size: 13px;
 }
 #curriculo h1 {
+	margin-top: 20px;
 	font-weight: bold;
 	font-size: 25px;
 	border-bottom: 1px solid #0059b3;
@@ -63,6 +73,7 @@ body #curriculo {
 
 	}
 
+/* conserta problema de filhos com floats diferentes na mesma div */
 #curriculo .clearfix {
 	clear: both;
 }
