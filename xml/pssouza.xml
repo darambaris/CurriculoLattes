@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/inf_pessoal.xsl"?>
 <?xml-stylesheet type="text/xsl" href="./xsl/orientacoes.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./xsl/publicacoes.xsl"?>
 <CURRICULO id="curriculo">	
 	<NOME>Paulo Sérgio Lopes de Souza</NOME>
 	<AVATAR src="./img/avatar.jpg"/>

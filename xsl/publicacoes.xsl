@@ -4,6 +4,7 @@
    <html> 
    	<head> <link rel="stylesheet" type="text/css" href="./css/format.css"/></head>
    	<body id="curriculo">
+   		<h2>Publicações</h2>
    	</body>
    </html>
 </xsl:template>

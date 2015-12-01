@@ -1,7 +1,7 @@
 
 /******** CONSTANTES **********/
 const XMLNAME = "pssouza.xml";
-const XSLNAME = ["inf_pessoal.xsl","orientacoes.xsl"];
+const XSLNAME = ["inf_pessoal.xsl","orientacoes.xsl","publicacoes.xsl"];
 
 /* depois de ler todo o documento */
 $(document).ready(function() {
@@ -9,6 +9,7 @@ $(document).ready(function() {
   /* modo completo - default */	
   $(".conteudo").append(addXML(XMLNAME,XSLNAME[0]));
   $(".conteudo").append(addXML(XMLNAME,XSLNAME[1]));
+  $(".conteudo").append(addXML(XMLNAME,XSLNAME[2]));
   
   $("nav li").click(function(){
   		var tipo = $(this).attr("id");
@@ -16,8 +17,9 @@ $(document).ready(function() {
   		/* definindo documentos */
   		var inf_pessoal = addXML(XMLNAME,XSLNAME[0]);
   		var orientacoes = addXML(XMLNAME,XSLNAME[1]);
-  		
-  		/* limpa todos os filhos de conteudo */
+  		var publicacoes = addXML(XMLNAME,XSLNAME[2]);
+
+  		/* limpa todos os filhos da div .conteudo */
   		$(".conteudo").empty();
 
   		/* design do botão quando ativo */
@@ -29,9 +31,13 @@ $(document).ready(function() {
   		switch(tipo){
   			case "b-completo":
   				$(".conteudo").append(orientacoes);
+  				$(".conteudo").append(publicacoes);
   			break;	
   			case "b-orientacoes":
-  				$(".conteudo").append(orientacoes); 
+  				$(".conteudo").append(orientacoes);
+  			break;	 
+  			case "b-publicacoes":
+  				$(".conteudo").append(publicacoes);
   			break;
   		}
   		
