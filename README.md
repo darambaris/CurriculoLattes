@@ -3,4 +3,4 @@ Criação de uma página HTML que contém a estrutura do currículo Lattes para 
 
 Integrantes:
 Jéssika Darambaris Oliveira nº7961026
-Vitor Ribeiro		    nº
+Vitor P. Ribeiro	    nº

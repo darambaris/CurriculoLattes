@@ -75,17 +75,3 @@ body {
   position: relative;
   z-index: 1;
 }
-
-.conteudo .info-pessoal {
-  padding: 10px;
-}
-
-.conteudo .orientacoes {
-  opacity: 0;
-  padding: 10px;
-}
-
-.conteudo .publicacoes {
-  opacity: 0;
-  padding: 10px;
-}

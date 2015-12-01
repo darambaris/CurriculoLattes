@@ -1,0 +1,58 @@
+body #curriculo {
+	background-color: #FFF;
+	padding: 15px;
+	color: #666;
+	margin-top: 20px;
+	font-family: Verdana;
+}
+
+#curriculo h1 {
+	font-weight: bold;
+	font-size: 25px;
+	border-bottom: 1px solid #b3d1ff;
+	color: #01528f;
+}
+
+#curriculo h2 {
+	font-size: 20px;
+	color: #0059b3;
+	border-bottom: 1px solid #b3d1ff;
+}
+
+#curriculo h6 {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#curriculo .avatar {
+	float:left;
+	width:20%;
+	border:1px solid red;
+	margin-right: 15px;
+	height:200px;
+}
+#curriculo .resumo {
+	text-align: justify;
+	font-size: 15px;
+	float:left;
+	width: 77%;
+	line-height: 18px;
+}
+
+#curriculo table {
+	margin-top: 10px;
+	font-size: 15px;
+
+}
+	#curriculo table tr td {
+		padding: 5px 5px 5px 15px;
+		
+	}
+	#curriculo table tr td:nth-child(1){
+		width: 130px;
+
+	}
+
+#curriculo .clearfix {
+	clear: both;
+}
