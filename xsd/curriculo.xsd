@@ -196,7 +196,7 @@ Descricao: XMLSchema responsável por validar os arquivos XMLs encontrados na pa
 	
 	<xs:simpleType name="type_publicacao">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="(livro|capitulo_livro|artigo|trabalho)"/>
+			<xs:pattern value="(capitulo_livro|artigo|trabalho)"/>
 		</xs:restriction>
 	</xs:simpleType>
 	

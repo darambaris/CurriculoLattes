@@ -224,23 +224,22 @@ Descricao: XML baseado nas informações do Currículo Lattes do prof. Rudinei G
 			<ANO>2007</ANO>
 		</PUBLICACAO>	
 		<PUBLICACAO tipo="trabalho">
-			<AUTOR>TIOSSO, F.</AUTOR>
-			<AUTOR>Bruschi, S.M.</AUTOR>
-			<AUTOR>SOUZA, PAULO S. L.</AUTOR>
-			<AUTOR>BARBOSA, E. F.</AUTOR>
-			<TITULO>Amnesia: um Objeto de Aprendizagem para o Ensino de Hierarquia de Memória</TITULO>
-			<IN>In: 25º Simpósio Brasileiro de Informática na Educação, Dourados</IN>
-			<TITULO-PUBLICACAO>Recursos Educacionais Abertos</TITULO-PUBLICACAO>
-			<ANO>2014</ANO>
+			<AUTOR>BARBIERI, T. T. S.</AUTOR>
+			<AUTOR>TROJAHN, T. H.</AUTOR>
+			<AUTOR>PONTI JUNIOR, M.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<TITULO>Shot-HR: A Video Shot Representation Method Based on Visual Features</TITULO>
+			<IN>ACM/SIGAPP Symposium On Applied Computing, 2015, Salamanca. ACM/SIGAPP Symposium On Applied Computing. New York</IN>
+			<TITULO-PUBLICACAO>Applied Computing</TITULO-PUBLICACAO>
+			<ANO>2015</ANO>
 		</PUBLICACAO>	
 		<PUBLICACAO tipo="trabalho">
-			<AUTOR>BRITO, MARIA.</AUTOR>
-			<AUTOR>SANTOS, MARCOS.</AUTOR>
-			<AUTOR>SOUZA, PAULO.</AUTOR>
-			<AUTOR>SOUZA, SIMONE.</AUTOR>
+			<AUTOR>GOULARTE, R.</AUTOR>
+			<AUTOR>FORTES, R. P. M.</AUTOR>
+			<AUTOR>VILLENA, J. M. R.</AUTOR>
 			<TITULO>Integration testing criteria for mobile robotic systems</TITULO>
-			<IN>Wellington Pinheiro dos Santos. (Org.)</IN>
-			<TITULO-PUBLICACAO>Evolutionary Computation</TITULO-PUBLICACAO>
+			<IN>Universal Access in Human-Computer Interaction. Access to Today's Technologies, 2015, Las Vegas</IN>
+			<TITULO-PUBLICACAO> Universal Access in Human-Computer Interaction. Access to Today's Technologies. Heidelberg: Springer</TITULO-PUBLICACAO>
 			<ANO>2015</ANO>
 		</PUBLICACAO>	
 	</PUBLICACOES>
@@ -254,7 +253,7 @@ Descricao: XML baseado nas informações do Currículo Lattes do prof. Rudinei G
 
 		<ORIENTACAO tipo="doutorado" status="andamento">
 			<ALUNO>Johana Maria Rosas Villena</ALUNO>
-			<TITULO>Interação multimodal multímidia como subsídio para usabilidade e acessibilidade.</TITULO>
+			<TITULO>Interação multimodal multímidia como subsídio para usabilidade e acessibilidade</TITULO>
 			<ANO>2011</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</ORIENTACAO>

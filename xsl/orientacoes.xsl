@@ -24,7 +24,7 @@ Descricao: XSL responsável por transformar a seção "ORIENTACOES" do XML
          						<td>
          							<xsl:value-of select="ori:ALUNO" />.
          							<xsl:value-of select="ori:TITULO" />.
-         							<xsl:value-of select="ori:ANO" />.
+         							Início: <xsl:value-of select="ori:ANO" />.
          							<xsl:value-of select="ori:INSTITUICAO" />.
          						</td>
          					</tr>
