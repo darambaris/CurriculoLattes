@@ -15,6 +15,7 @@
 			<CITACAO-BIBLIOGRAFICA>PAULO SERGIO LOPES</CITACAO-BIBLIOGRAFICA>		
 			<CITACAO-BIBLIOGRAFICA>SOUZA, PAULO S.L</CITACAO-BIBLIOGRAFICA>		
 		</IDENTIFICACAO>
+		<!-- indica qual endereço deve aparecer na página (profissinal, pessoal ou ambos) -->
 		<ENDERECO preferencia="profissional">
 			<ENDERECO-PROFISSIONAL>
 				<INSTITUICAO codigo="006700000002">Universidade de São Paulo</INSTITUICAO>
@@ -22,15 +23,27 @@
 				<LOGRADOURO-COMPLETO>Av. Trabalhador São-carlense, 400</LOGRADOURO-COMPLETO>
 				<CEP>13560970</CEP>
 				<BAIRRO>Centro</BAIRRO>
+				<CIDADE>São Carlos</CIDADE>
 				<PAIS>Brasil</PAIS>
 				<TELEFONE>
 					<DDD>16</DDD>
 					<NUMERO>33736623</NUMERO>
 				</TELEFONE>
 			</ENDERECO-PROFISSIONAL>	
+			<ENDERECO-PESSOAL>
+				<LOGRADOURO-COMPLETO>Rua Sebastião de Moraes, 233</LOGRADOURO-COMPLETO>
+				<CEP>13562030</CEP>
+				<BAIRRO>Centro</BAIRRO>
+				<CIDADE>São Carlos</CIDADE>
+				<PAIS>Brasil</PAIS>
+				<TELEFONE>
+					<DDD>16</DDD>
+					<NUMERO>33722244</NUMERO>
+				</TELEFONE>
+			</ENDERECO-PESSOAL>	
 		</ENDERECO>
 		<FORMACAO-ACADEMICA>
-			<GRADUACAO>
+			<GRADUACAO status="concluido">
 				<TITULO>Graduação em Bacharel Em Processamento de Dados. </TITULO>
 				<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
 				<TITULO-TCC> Tecnologia da Informação Aplicada à Medicina. </TITULO-TCC>
@@ -40,7 +53,7 @@
 					<CONCLUSAO>1990</CONCLUSAO>
 				</DURACAO>	
 			</GRADUACAO>
-			<ESPECIALIZACAO>
+			<ESPECIALIZACAO status="concluido">
 				<TITULO> Especialização Em Ciências da Computação. </TITULO>
 				<INSTITUICAO>Universidade Estadual de Ponta Grossa, UEPG, Brasil. </INSTITUICAO>
 				<ORIENTADOR> João Umberto Furquim de Souza. </ORIENTADOR>

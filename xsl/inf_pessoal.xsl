@@ -10,11 +10,11 @@
    			<h1><xsl:value-of select="NOME"/></h1><br/>
    			<div>
 				<div class="avatar">
-					<xsl:attribute name="AVATAR"/>
+					<img src="{AVATAR/@src}" />
 				</div>
 				<div class="resumo">
 					<xsl:value-of select="RESUMO-CV"/>
-					<h6>Texto informado pelo autor.</h6>
+					<b><small>Texto informado pelo autor.</small></b>
 				</div>
 				<br class="clearfix"/>
 			</div><br /><br />	
@@ -28,11 +28,11 @@
 					<h2>Identificação</h2>
 					<table>
 						<tr>
-							<td>Nome:</td>
+							<td><b>Nome:</b></td>
 							<td><xsl:value-of select="IDENTIFICACAO/NOME" /> </td>
 						</tr>
 						<tr>
-							<td>Citações Bibliográficas:</td>
+							<td><b>Citações Bibliográficas:</b></td>
 							<td>
 								<xsl:for-each select="IDENTIFICACAO/CITACAO-BIBLIOGRAFICA">
 									<xsl:value-of select="." />; 
@@ -51,27 +51,29 @@
 								<h2> Endereço Profissional</h2>
 								<table>
 									<tr>
-										<td>Instituição: </td>
+										<td><b>Instituição:</b></td>
 										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/INSTITUICAO" /> </td>
 									</tr>
 									<tr>
-										<td>Órgão: </td>
+										<td><b>Órgão:</b></td>
 										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/ORGAO" /> </td>
 									</tr>
 									<tr>
-										<td>Logradouro: </td>
+										<td><b>Logradouro:</b></td>
 										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/LOGRADOURO-COMPLETO" /> </td>
-										<td>CEP:</td>
+										<td><b>CEP:</b></td>
 										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/CEP" /> </td>
 									</tr>
 									<tr>
-										<td>Bairro: </td>
-										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/BAIRRO" /> </td>
-										<td>País:</td>
+										<td><b>Bairro:</b></td>
+										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/BAIRRO"/> </td>
+										<td><b>Cidade:</b></td>
+										<td><xsl:value-of select="ENDERECO-PESSOAL/CIDADE"/> </td>
+										<td><b>País:</b></td>
 										<td><xsl:value-of select="ENDERECO-PROFISSIONAL/PAIS" /> </td>
 									</tr>	
 									<tr>
-										<td>Telefone: </td>
+										<td><b>Telefone:</b></td>
 										<td>(<xsl:value-of select="ENDERECO-PROFISSIONAL/TELEFONE/DDD" />)
 											<xsl:value-of select="ENDERECO-PROFISSIONAL/TELEFONE/NUMERO" />
 										</td>
@@ -82,23 +84,25 @@
 						</xsl:choose>
 						<xsl:choose>
 							<!-- para aparecer o endereço pessoal -->
-							<xsl:when test="boolean(@preferencia = 'pessoal' or @preferencia='ambos')">
+							<xsl:when test="boolean(@preferencia='pessoal' or @preferencia='ambos')">
 								<h2> Endereço Pessoal</h2>
 								<table>
 									<tr>
-										<td>Logradouro: </td>
+										<td><b>Logradouro:</b></td>
 										<td><xsl:value-of select="ENDERECO-PESSOAL/LOGRADOURO-COMPLETO" /> </td>
-										<td>CEP:</td>
+										<td><b>CEP:</b></td>
 										<td><xsl:value-of select="ENDERECO-PESSOAL/CEP" /> </td>
 									</tr>
 									<tr>
-										<td>Bairro: </td>
+										<td><b>Bairro:</b></td>
 										<td><xsl:value-of select="ENDERECO-PESSOAL/BAIRRO" /> </td>
-										<td>País:</td>
+										<td><b>Cidade:</b></td>
+										<td><xsl:value-of select="ENDERECO-PESSOAL/CIDADE" /> </td>
+										<td><b>País:</b></td>
 										<td><xsl:value-of select="ENDERECO-PESSOAL/PAIS" /> </td>
 									</tr>	
 									<tr>
-										<td>Telefone: </td>
+										<td><b>Telefone:</b></td>
 										<td>(<xsl:value-of select="ENDERECO-PESSOAL/TELEFONE/DDD" />)
 											<xsl:value-of select="ENDERECO-PESSOAL/TELEFONE/NUMERO" />
 										</td>
@@ -117,13 +121,13 @@
 					<table>
 						<tr>
 							<td>
-								<xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" />
+								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
 							</td>
 							<td>
 								<xsl:value-of select="TITULO" /><br/>
 								<xsl:value-of select="INSTITUICAO" /><br/>
-								Título: <xsl:value-of select="TITULO-TESE" /><br/>
-								Orientador:<xsl:value-of select="ORIENTADOR" /><br/>
+								<b>Título:</b> <xsl:value-of select="TITULO-TESE" /><br/>
+								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
 							</td>
 						</tr>	
 					</table>	
@@ -132,13 +136,13 @@
 					<table>
 						<tr>
 							<td>
-								<xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" />
+								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
 							</td>
 							<td>
 								<xsl:value-of select="TITULO" /><br/>
 								<xsl:value-of select="INSTITUICAO" /><br/>
-								Título: <xsl:value-of select="TITULO-TESE" /><br/>
-								Orientador:<xsl:value-of select="ORIENTADOR" /><br/>
+								<b>Título:</b><xsl:value-of select="TITULO-TESE" /><br/>
+								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
 							</td>
 						</tr>	
 					</table>	
@@ -147,12 +151,12 @@
 					<table>
 						<tr>
 							<td>
-								<xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" />
+								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
 							</td>
 							<td>
 								<xsl:value-of select="TITULO" /><br/>
 								<xsl:value-of select="INSTITUICAO" /><br/>
-								Orientador:<xsl:value-of select="ORIENTADOR" /><br/>
+								<b>Orientador:</b><xsl:value-of select="ORIENTADOR" /><br/>
 							</td>
 						</tr>	
 					</table>
@@ -161,13 +165,13 @@
 					<table>
 						<tr>
 							<td>
-								<xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" />
+								<b><xsl:value-of select="DURACAO/INICIO" />-<xsl:value-of select="DURACAO/CONCLUSAO" /></b>
 							</td>
 							<td>
 								<xsl:value-of select="TITULO" /><br/>
 								<xsl:value-of select="INSTITUICAO" /><br/>
-								Título: <xsl:value-of select="TITULO-TCC" /><br/>
-								Orientador:<xsl:value-of select="ORIENTADOR" /><br/>
+								<b>Título:</b> <xsl:value-of select="TITULO-TCC" /><br/>
+								<b>Orientador:</b> <xsl:value-of select="ORIENTADOR" /><br/>
 							</td>
 						</tr>	
 					</table>	

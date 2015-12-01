@@ -5,7 +5,12 @@ body #curriculo {
 	margin-top: 20px;
 	font-family: Verdana;
 }
-
+#curriculo b {
+	font-weight: bold;
+}
+#curriculo small {
+	font-size: 13px;
+}
 #curriculo h1 {
 	font-weight: bold;
 	font-size: 25px;
@@ -19,17 +24,10 @@ body #curriculo {
 	border-bottom: 1px solid #b3d1ff;
 }
 
-#curriculo h6 {
-	font-size: 13px;
-	font-weight: bold;
-}
-
 #curriculo .avatar {
 	float:left;
 	width:20%;
-	border:1px solid red;
 	margin-right: 15px;
-	height:200px;
 }
 #curriculo .resumo {
 	text-align: justify;
@@ -45,7 +43,7 @@ body #curriculo {
 
 }
 	#curriculo table tr td {
-		padding: 5px 5px 5px 15px;
+		padding: 1px 1px 1px 15px;
 		line-height: 18px;
 		
 	}
