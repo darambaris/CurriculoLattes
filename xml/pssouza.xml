@@ -90,8 +90,8 @@
 	</PUBLICACOES>
 	<ORIENTACOES>
 		<DISSERTACAO-MESTRADO status="concluido">
-			<MESTRANDO>Raphael Negrisoli Batista.</MESTRANDO>
-			<TITULO>Desenvolvimento de um framework teórico para teste estrutural distribuído.</TITULO>
+			<MESTRANDO>Raphael Negrisoli Batista</MESTRANDO>
+			<TITULO>Desenvolvimento de um framework teórico para teste estrutural distribuído</TITULO>
 			<ANO>2015</ANO>
 			<INSTITUICAO codigo="006742000000">nstituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</DISSERTACAO-MESTRADO>
@@ -105,22 +105,21 @@
 
 		<DISSERTACAO-MESTRADO status="andamento">
 			<MESTRANDO>Zhang Yifei</MESTRANDO>
-			<TITULO>Estudo e simulação de algoritmos de escalonamento para grades móveis voltados à conectividade dos dispositivos móveis.</TITULO>
+			<TITULO>Estudo e simulação de algoritmos de escalonamento para grades móveis voltados à conectividade dos dispositivos móveis</TITULO>
 			<ANO>2014</ANO>
-			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos 
-			</INSTITUICAO>
+			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</DISSERTACAO-MESTRADO>
 
 		<DISSERTACAO-MESTRADO status="andamento">
-			<MESTRANDO>Frederico Cassis Ribeiro Santos.</MESTRANDO>
-			<TITULO>Análise de execução de aplicações paralelas em grades móveis com restrições de processamento e bateria.</TITULO>
+			<MESTRANDO>Frederico Cassis Ribeiro Santos</MESTRANDO>
+			<TITULO>Análise de execução de aplicações paralelas em grades móveis com restrições de processamento e bateria</TITULO>
 			<ANO>2013</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</DISSERTACAO-MESTRADO>
 
 		<TESE-DOUTORADO status="andamento">
-			<DOUTORANDO>Helder Jefferson Ferreira da Luz.</DOUTORANDO>
-			<TITULO>Teste de Programas Concorrentes em CUDA.</TITULO>
+			<DOUTORANDO>Helder Jefferson Ferreira da Luz</DOUTORANDO>
+			<TITULO>Teste de Programas Concorrentes em CUDA</TITULO>
 			<ANO>2014</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</TESE-DOUTORADO>
@@ -133,8 +132,8 @@
 		</INICIACAO-CIENTIFICA>
 
 		<INICIACAO-CIENTIFICA status="concluido">
-			<ALUNO>Rafael Regis do Prado.</ALUNO>
-			<TITULO>Extensão das funcionalidades da ferramenta de testes ValiMPI.</TITULO>
+			<ALUNO>Rafael Regis do Prado</ALUNO>
+			<TITULO>Extensão das funcionalidades da ferramenta de testes ValiMPI</TITULO>
 			<ANO>2011</ANO>
 			<INSTITUICAO codigo="006742000000">Instituto de Ciências Matemáticas e de Computação Usp São Carlos</INSTITUICAO>
 		</INICIACAO-CIENTIFICA>

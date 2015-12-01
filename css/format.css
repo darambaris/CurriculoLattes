@@ -23,6 +23,17 @@ body #curriculo {
 	border-bottom: 1px solid #0059b3;
 }
 
+#curriculo h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 4px 4px 4px 15px;
+	background-color: #0059b3;
+	color: #FFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
 #curriculo .avatar {
 	float:left;
 	width:20%;
@@ -44,7 +55,8 @@ body #curriculo {
 	#curriculo table tr td {
 		padding: 1px 1px 1px 15px;
 		line-height: 18px;
-		
+		text-align: justify;
+		font-size: 14px;
 	}
 	#curriculo table tr td:nth-child(1){
 		width: 130px;

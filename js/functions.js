@@ -27,6 +27,9 @@ $(document).ready(function() {
   		/* adiciona xml */
   		$(".conteudo").append(inf_pessoal); // todos possuem
   		switch(tipo){
+  			case "b-completo":
+  				$(".conteudo").append(orientacoes);
+  			break;	
   			case "b-orientacoes":
   				$(".conteudo").append(orientacoes); 
   			break;
