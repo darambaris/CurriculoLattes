@@ -4,7 +4,6 @@
    <html> 
    	<head> <link rel="stylesheet" type="text/css" href="./css/format.css"/></head>
    	<body id="curriculo">
-
    		<!-- informações gerais (campos de título, foto e resumo-cv) -->
    		<xsl:for-each select="CURRICULO">
    			<h1><xsl:value-of select="NOME"/></h1><br/>
